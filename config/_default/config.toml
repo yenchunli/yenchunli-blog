@@ -1,12 +1,12 @@
-baseURL = "https://412988937.github.io"
+baseURL = "https://yenchunli.netlify.app"
 languageCode = "en-us"
-title = "412988937 Website"
+title = "yenchunli Website"
 
 [taxonomies]
   tag = "tags"
 
 [author]
-	name = "412988937"
+	name = "yenchunli"
 
 # Set to false to disallow raw HTML in markdown files
 [markup.goldmark.renderer]
@@ -15,11 +15,11 @@ title = "412988937 Website"
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Hello, I'm Yen Chun Li. My dream is to create things people like."
+	description = "Hello, I'm Yen-Chun Li. My dream is to create things people like."
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
-    email = "nthucsbg@gmail.com"
+    email = "yenchun0902@gmail.com"
     twitter = "#"
     linkedin = "#"
 
@@ -29,7 +29,7 @@ title = "412988937 Website"
 	# Creative & Visual
 
 	# Programming
-    github = "https://github.com/412988937"
+    github = "https://github.com/yenchunli"
 
     # Academic
 
