@@ -19,4 +19,4 @@ jobs:
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           repo: yenchunli/yenchunli.github.io
-          branch: master
+          branch: main
