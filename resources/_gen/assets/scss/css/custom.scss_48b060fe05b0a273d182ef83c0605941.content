@@ -1,1 +1,0 @@
-.book-toc{flex:0 0 16rem;font-size:1rem;height:100%;width:360px;padding-top:40px;position:fixed;top:0;right:0;overflow-x:hidden;overflow-y:auto}.book-toc nav{width:16rem;padding:1rem;right:36px;position:relative;padding:0}.book-toc img{height:1em}.book-toc nav>ul>li:first-child{margin-top:0}@media screen and (max-width:1300px){.book-toc{display:none}}

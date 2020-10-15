@@ -1,5 +1,5 @@
 ---
-title: "[Nginx] Install nginx-module-vts for monitoring"
+title: "Install nginx-module-vts for monitoring"
 date: 2020-04-14T10:23:09+08:00
 draft: false
 
@@ -18,7 +18,7 @@ tags: ["Nginx"]
 
 We download the stable version.
 
-```
+```bash
 cd /opt/local
 wget https://nginx.org/download/nginx-1.16.1.tar.gz
 tar xvf nginx-1.16.1.tar.gz
@@ -29,7 +29,7 @@ sudo chown -R <user>:<group> nginx-1.16.1
 
 [Nginx-module-vts release](https://github.com/vozlt/nginx-module-vts/releases)
 
-```
+```bash
 cd /opt/local
 wget https://github.com/vozlt/nginx-module-vts/archive/v0.1.18.tar.gz
 tar xvf v0.1.18.tar.gz
@@ -38,19 +38,19 @@ tar xvf v0.1.18.tar.gz
 ## 3. Build Nginx source code
 
 Check the dependencies and the settings
-```
+```bash
 ./configure
 ```
 
 Usually you need to install PCRE, zlib, Openssl to support `nginx rewrite` , `gzip` and `https`.
 
-```
+```bash
 sudo apt-get install libpcre3 libpcre3-dev
 sudo apt-get install zlib1g-dev
 sudo apt-get install openssl libssl-dev
 ```
 
-```
+```bash
 ./configure \
 --prefix=/etc/nginx \
 --sbin-path=/usr/sbin/nginx \
@@ -99,7 +99,7 @@ sudo apt-get install openssl libssl-dev
 
 it will show the configs we are about to use in `Makefile`
 
-```
+```bash
 Configuration summary
   + using threads
   + using system PCRE library

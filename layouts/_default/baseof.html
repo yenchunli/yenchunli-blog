@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<!-- Default base template. Other templates define the "main" portion in this template -->
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
-    {{ partial "head.html" . }}
-    <body>
-        {{ partial "nav.html" . }}
-        <div id="content" class="content-container">
-        {{ block "main" . }}
-        {{ end }}
-        {{ partial "math.html" . }}
-        </div>
-        <aside class="book-toc">
-            {{ template "toc" . }}
-        </aside>
-        {{ partial "footer-mobile.html" . }}
-    </body>
+<html lang="{{ if and $.Site.LanguageCode (not .Page.Params.untranslated) }}{{ $.Site.LanguageCode }}{{ else }}en-US{{ end }}">
+	
+	{{/* For untranslated page, we use the English header. */}}
+	{{ if .Page.Params.untranslated }}
+		{{ range .Page.Translations }}
+			{{ if eq "en" .Language.Lang }}
+				{{ partial "head" . }}
+			{{ end }}
+		{{ end }}
+	{{ else }}
+		{{ partial "head" . }}
+	{{ end }}
+	<body>
+		{{/* partial "header" . */}}
+		<div style="padding-top: 80px">
+			{{ block "main" . }}
+			{{ end }}
+		</div>
+		{{ partial "footer" . }}
+	</body>
 </html>

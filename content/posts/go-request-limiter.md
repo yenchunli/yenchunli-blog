@@ -1,5 +1,5 @@
 ---
-title: "[Golang] Write a request limiter in Go"
+title: "Write a request limiter in Go"
 date: 2020-04-12T14:08:30+08:00
 draft: false
 

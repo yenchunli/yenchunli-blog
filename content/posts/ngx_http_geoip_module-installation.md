@@ -1,5 +1,5 @@
 ---
-title: "[Nginx] Install ngx_http_geoip_module for ip analysis"
+title: "Install ngx_http_geoip_module for ip analysis"
 date: 2020-04-14T12:18:32+08:00
 draft: false
 

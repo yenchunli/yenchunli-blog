@@ -1,5 +1,5 @@
 ---
-title: "[Linux] Netstat"
+title: "Netstat"
 date: 2020-04-14T15:59:31+08:00
 draft: false
 

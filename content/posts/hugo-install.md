@@ -1,5 +1,5 @@
 ---
-title: "[Hugo] Install Hugo on MacOS"
+title: "Install Hugo on MacOS"
 date: 2020-04-11T11:39:20+08:00
 draft: false
 
