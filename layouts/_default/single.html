@@ -1,4 +1,8 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
+    <p>Date: {{ .Date | dateFormat "2006-01-02" }}</p>
+    <p>Tags: {{ range .Params.Tags }} <button class="btn btn-outline-info mr-2">{{.}}</button> {{ end }}</p>
+    <h2>Directory</h2>
+    {{ .TableOfContents }}
     {{ .Content }}
 {{ end }}

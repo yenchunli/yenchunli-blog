@@ -1,7 +1,7 @@
 ---
 title: "Push hugo to Github Page"
 date: 2020-04-12T11:39:20+08:00
-draft: false
+draft: true
 
 tags: [ "Hugo", "Github Page" ]
 

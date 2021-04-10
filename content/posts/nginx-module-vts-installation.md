@@ -1,7 +1,7 @@
 ---
 title: "Install nginx-module-vts for monitoring"
 date: 2020-04-14T10:23:09+08:00
-draft: false
+draft: true
 
 summary: "Nginx-module-vts is designed to monitor Internet traffic on Nginx."
 

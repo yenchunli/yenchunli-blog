@@ -1,7 +1,7 @@
 ---
 title: "Install ngx_http_geoip_module for ip analysis"
 date: 2020-04-14T12:18:32+08:00
-draft: false
+draft: true
 
 summary: "Ngx-http-geoip-module can enable Internet traffic analysis for indivisual conuntry."
 
