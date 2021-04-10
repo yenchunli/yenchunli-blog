@@ -3,7 +3,7 @@ title: "Freebsd VM Installation"
 date: 2020-04-12T16:18:10+08:00
 draft: true
 
-tags: ["freebsd", "vm"]
+tag: ["freebsd", "vm"]
 ---
 
 ## Environment

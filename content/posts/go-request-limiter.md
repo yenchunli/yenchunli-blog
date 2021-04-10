@@ -14,7 +14,7 @@ summary: "A middleware which can restrict ip request in certain time window"
 [Github](https://github.com/412988937/go-request-limit)
 
 ## How to test
-```bash
+```sh
 docker run --name redis-lab -p 6379:6379 -d redis
 cd <project-name>
 go build main.go //if necessary

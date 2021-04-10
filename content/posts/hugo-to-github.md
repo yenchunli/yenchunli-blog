@@ -28,7 +28,7 @@ Here we demo how to create `User/Organization Page`.
 
 ### 2. Create `deploy.sh` at **hugo-project-dir**
 
-```bash
+```
 #!/bin/sh
 
 # If a command fails then the deploy stops
@@ -60,7 +60,7 @@ git push origin master
 
 In `deploy.sh`, it run `hugo` to generate static files to `public/`. Then it will push whole files to `412988937.github.io.git`. Finally we can see our website in [https://412988937.github.io](https://412988937.github.io)
 
-```bash
+```
 cd <hugo-project-dir>
 git init
 git submodule add -b master https://github.com/412988937/412988937.github.io.git public
@@ -70,6 +70,6 @@ Note: we can add `hugo-project-dir` to git respository for tracking.
 
 ### 3. Publish to Github Page when we create new things
 
-```bash
+```
 sh deploy.sh
 ```
