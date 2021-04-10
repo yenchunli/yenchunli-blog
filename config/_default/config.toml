@@ -1,7 +1,6 @@
 baseURL = "https://yenchunli.github.io"
 languageCode = "en-us"
 title = "yenchunli Website"
-theme = "m10c"
 paginate = 8
 
 [taxonomies]

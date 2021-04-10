@@ -8,7 +8,7 @@
     <div class="section">Posts</div>
 
     <ul>
-    {{ range .Site.RegularPages }}
+    {{ range where .Site.RegularPages "Section" "in" (slice "posts") }}
         <li>
             <a class="d-inline-flex" href="{{ .Permalink }}">
                 <div class="mr-3">{{ .Date | dateFormat "2006-01-02" }}</div>
@@ -21,17 +21,28 @@
     <div class="section">Projects</div>
 
     <div class="project">
-        {{ range .Site.Data.project.project}}
+        {{ range where .Site.RegularPages "Section" "in" (slice "projects")}}
             <div class="project-body row">
                 <div class="project-content col-10">
-                    <h2>{{ .name }}</h2>
-                    <p>{{ .content }}</p>
-                    <a href="{{ .url }}" class="mr-2">Github</a>
-                    <div class="project-tag">
-                        {{ range .tags }}
-                            {{ . }}
-                        {{ end }}
+                    <div class="row mb-5">
+                        <div class="col-lg-5 col-12">
+                            <img src="{{ .Params.Cover }}" class="w-100"/>
+                        </div>
+                        <div class="col-lg-7 col-12 pt-2 pb-2">
+                            <a href="{{ .Permalink }}" class="h2 mb-5">{{ .Name }}</a>
+                            <p class="mt-3">{{ .Description }}</p>
+                            <p>Github: <a href="">{{ .Params.Github }}</a></p>
+                            <div class="project-tag">
+                                <p>Tags: 
+                                {{ range .Params.Tags }}
+                                    {{ . }}
+                                {{ end }}
+                                </p>
+                            </div>
+                        </div>
+                    
                     </div>
+                    
                     
                 </div>
             </div>
