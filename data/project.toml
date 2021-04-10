@@ -7,8 +7,8 @@ content = "Our system based on kubernetes, pulsar and opencv."
 [[project]]
 name = "Arts Center Website for NTHU"
 url = "https://github.com/arts-nthu/website"
-tags = ["hugo", "git"]
-content = "This website is built with hugo and deploy on Netlify."
+tags = ["go", "react", "postgresql", "docker"]
+content = "https://github.com/yenchunli/arts-nthu-backend\nhttps://github.com/yenchunli/arts-nthu-frontend"
 
 [[project]]
 name = "Go limit request"

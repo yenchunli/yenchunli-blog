@@ -16,18 +16,18 @@ I will try to install it using `apt-get`
 ## Install steps
 
 1. Search for geoip package
-```
+```bash
 apt-cache search geoip
 ```
 
 2. Install libgeoip-dev
-```
+```bash
 sudo apt-get install libgeoip-dev
 ```
 
 3. Add configure settings when you build Nginx
-```
-,/configure \
+```bash
+./configure \
 --with-http_geoip_module \
 --prefix=/etc/nginx \
 --sbin-path=/usr/sbin/nginx \

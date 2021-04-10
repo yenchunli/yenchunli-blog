@@ -20,7 +20,7 @@ summary: "A command which often use to check network stats"
 
 
 ### To show the process which use port 443
-```
+```bash
 sudo netstat -antp | grep 443
 ```
 

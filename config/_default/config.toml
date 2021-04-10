@@ -1,6 +1,9 @@
-baseURL = "https://yenchunli.netlify.app"
+baseURL = "https://yenchunli.github.io"
 languageCode = "en-us"
 title = "yenchunli Website"
+theme = "m10c"
+themeDir = "../"
+paginate = 8
 
 [taxonomies]
   tag = "tags"
@@ -13,25 +16,13 @@ title = "yenchunli Website"
     unsafe = true
 
 [params]
-	math = true
 	# Blog description at the top of the homepage. Supports markdown.
 	description = "Hello, I'm Yen-Chun Li. My dream is to create things people like."
 
-	# Add links to your accounts. Remove the ones you don't want to include.
-	# Main
-    email = "yenchun0902@gmail.com"
-    twitter = "#"
-    linkedin = "#"
-
-	# Writing
-    medium = "#"
-
-	# Creative & Visual
-
-	# Programming
-    github = "https://github.com/yenchunli"
-
-    # Academic
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/yenchunli"
 
 # Menu links along the sidebar navigation.
 [[menu.main]]
