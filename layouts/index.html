@@ -1,0 +1,42 @@
+{{ define "main" }}
+    <div class="section">Jack Li</div>
+    <div>My Personal Website</div>
+
+    <div class="section">About Me</div>
+    <p>Hi, my name is Jack Li. I come from National Tsing University, Taiwan. I'm major in Computer Science.</p>
+    
+    <div class="section">Posts</div>
+
+    <ul>
+    {{ range .Site.RegularPages }}
+        <li>
+            <a class="d-inline-flex" href="{{ .Permalink }}">
+                <div class="mr-3">{{ .Date | dateFormat "2006-01-02" }}</div>
+                <div>{{ .Name }}</div>
+            </a>
+        </li>
+        
+    {{ end }}
+    </ul>
+    <div class="section">Projects</div>
+
+    <div class="project">
+        {{ range .Site.Data.project.project}}
+            <div class="project-body row">
+                <div class="project-content col-10">
+                    <h2>{{ .name }}</h2>
+                    <p>{{ .content }}</p>
+                    <a href="{{ .url }}" class="mr-2">Github</a>
+                    <div class="project-tag">
+                        {{ range .tags }}
+                            {{ . }}
+                        {{ end }}
+                    </div>
+                    
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
+    <div class="section">Contact</div>
+{{ end }}
